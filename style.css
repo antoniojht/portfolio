@@ -124,17 +124,24 @@ h1 span {
 .company__description p{
   background-color: #57cc99;
   color: white;
-  border-radius: 20px;
-  width: fit-content;
+  border-radius: 180px;
+  /* width: fit-content; */
+  text-align: center;
   padding: 5px 10px;
+  
   font-size: 20px;
+  
   margin-left: 5px;
   margin-top: 5px;
 }
 
+.company__description p:nth-child(2n+1) {
+  background-color: #38a3a5;
+}
+
 .company__name {
   color: #c7f9cc;
-  font-size: 25px;
+  font-size: 30px;
 }
 
 .company {
@@ -142,10 +149,6 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.company__description p:nth-child(2n+1) {
-  background-color: #38a3a5;
 }
 
 /* Skills */
@@ -159,6 +162,27 @@ h1 span {
   font-size: 45px;
 }
 
+.skills__logos img{
+  max-width: 120px;
+  margin: 0px 5px;
+}
+
+.skills__logos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contact */
+.contact h1 {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: lighter;
+  margin-top: 100px;
+  font-size: 45px;
+}
 
 /* Waves */
 .waves {
