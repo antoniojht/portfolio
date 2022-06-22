@@ -1,140 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Personal portfolio showing my background and skills as a software engineer in web curriculum format">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <link canonical="http://127.0.0.1:5500/personal/portfolio/index.html">
-    <title>Portfolio Jota</title>    
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <body>
-      <nav class="navbar">   
-        <div class="index">
-          <a href="#">Experience</a>
-          <a href="#">Skills</a>
-          <a href="#">Contact</a>
-          
-        </div>     
-        <div class="rrss">
-          <a href="https://github.com/antoniojht" target="_blank" rel="noopener" aria-label="Github" >
-            <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M14.3333 19V17.137C14.3583 16.8275 14.3154 16.5163 14.2073 16.2242C14.0993 15.9321 13.9286 15.6657 13.7067 15.4428C15.8 15.2156 18 14.4431 18 10.8989C17.9998 9.99256 17.6418 9.12101 17 8.46461C17.3039 7.67171 17.2824 6.79528 16.94 6.01739C16.94 6.01739 16.1533 5.7902 14.3333 6.97811C12.8053 6.57488 11.1947 6.57488 9.66666 6.97811C7.84666 5.7902 7.05999 6.01739 7.05999 6.01739C6.71757 6.79528 6.69609 7.67171 6.99999 8.46461C6.35341 9.12588 5.99501 10.0053 5.99999 10.9183C5.99999 14.4366 8.19999 15.2091 10.2933 15.4622C10.074 15.6829 9.90483 15.9461 9.79686 16.2347C9.68889 16.5232 9.64453 16.8306 9.66666 17.137V19" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M9.66667 17.7018C7.66667 18.3335 6 17.7018 5 15.7544" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </a>
-          <a href="https://www.linkedin.com/in/antoniojoseherreratabaco/" target="_blank" rel="noopener" aria-label="linkedIn">
-            <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 17V13.5V10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-              <path d="M7 7.01L7.01 6.99889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>              
-          </a>
-          <a href="https://twitter.com/antoniojht" target="_blank" rel="noopener" aria-label="Twitter">
-            <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>              
-          </a>
-        </div>
-      </nav>
-      <header class="header">
-          <div class="about">
-            <div class="about__title">
-              <h1>
-                <div class="about__presentation">
-                  <div>Hi! I'm</div>
-                  <div class="rol-pill">Software Engineer</div>
-                </div>
-                <span>Antonio José</span>
-              </h1>
-              <p class="about__description">
-                Full-Stack living in Spain. Passionate about the<br/>
-                development world. I enjoy my work and facing<br/>
-                all kinds of challenges. I love to propose ideas<br/>
-                and get into everything that is learning new things.
-              </p>
-              <br/>
-              <div class="soft-skills">
-                <div class="soft-skill__first">
-                  <div class="pills">Ambition</div>
-                  <div class="pills">Self-management Skill</div>
-                </div>
-                <div class="soft-skill__second">
-                  <div class="pills">Problem solving</div>
-                  <div class="pills">Teamwork</div>
-                </div>
-              </div>
-          </div>
-          <div>
-            <img src="images/profile_new.png" alt="profile photo" width="350" height="350"/>
-          </div>
-        </div>
-        <div>
-          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
-            <defs>
-              <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
-            </defs>
-            <g class="parallax">
-              <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(87, 204, 153,0.7" />
-              <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(56, 163, 165,0.5)" />
-              <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(34, 87, 122,0.3)" />
-              <use xlink:href="#gentle-wave" x="48" y="7" fill="#22577a" />
-            </g>
-          </svg>
-        </div>
-      </header>
-      <div class="experience">
-        <h1>Experience</h1>
-      </div>
-      <div class="company">
-        <div class="company__name">
-          Proemia
-        </div>
-        <div class="company__description">
-          <p>Working as Full-Stack developer</p>
-          <p>Task automation</p>
-        </div>
-        
-        <div class="company__name">
-          Emergya
-        </div>
-        <div class="company__description">
-          <p>Working with AWS on ETL Project</p>
-          <p>Creating an application web to fix security issues<br/>
-            automatically with microservices
-          </p>
-          <p>Providing solutions for new implementations on multiple projects</p>
-          <p>Fix issues on mobile project</p>
-        </div>
-        
-        <div class="company__name">
-          Sngular
-        </div>
-        <div class="company__description">
-          <p>Full-stack web developer with stack JS</p>
-        </div>
-      </div>
-      <div class="skills">
-        <h1>Skills</h1>
-        <div class="skills__logos">
-          <img src="images/react.png" alt="react logo" width="120" height="120" />
-          <img src="images/angular.png" alt="react logo" width="120" height="120" />
-          <img src="images/node.png" alt="react logo" width="120" height="120" />
-          <img src="images/nest.png" alt="react logo" width="120" height="120" />
-          <img src="images/mongo.png" alt="react logo" width="120" height="120" />
-        </div>
-      </div>
-      <div class="contact">
-        <h1>Contact</h1>
-      </div>
-      <footer>
-        footer
-      </footer>
-    </body>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description"
+    content="Personal portfolio showing my background and skills as a software engineer in web curriculum format">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link canonical="http://127.0.0.1:5500/personal/portfolio/index.html">
+  <title>Portfolio Jota</title>
+  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script>
+    function sendEmail() {
+      const context = document.getElementById('textarea');
+      //TODO: Limit token to only my host domain
+      Email.send({
+        SecureToken: '399de012-2b2b-43b1-9c3b-e64196d55a91',
+        To: 'ajherreratabaco@gmail.com',
+        From: 'ajherreratabaco@gmail.com',
+        Subject: "Contact by portfolio",
+        Body: context
+      }).then(
+        message => alert(message)
+        //TODO: limit button after 1 email
+      );
+    }
+  </script>
+
+<body>
+  <nav class="navbar">
+    <div class="index">
+      <a href="#">Experience</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact</a>
+
+    </div>
     
+  </nav>
+
+  <header class="header">
+    <div class="about">
+      <div class="about__title">
+        <h1>
+          <div class="about__presentation">
+            <div>Hi! I'm</div>
+            <h1 class="rol-pill">Software Engineer</h1>
+          </div>
+          <span>Antonio José</span>
+        </h1>
+        <p class="about__description">
+          Full-Stack living in Spain. Passionate about the<br />
+          development world. I enjoy my work and facing<br />
+          all kinds of challenges. I love to propose ideas<br />
+          and get into everything that is learning new things.
+        </p>
+        <br />
+        <div class="soft-skills">
+          <div class="soft-skill__first">
+            <div class="pills">Ambition</div>
+            <div class="pills">Self-management Skill</div>
+          </div>
+          <div class="soft-skill__second">
+            <div class="pills">Problem solving</div>
+            <div class="pills">Teamwork</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <img src="images/profile_new.png" alt="profile photo" width="350" height="350" />
+      </div>
+    </div>
+    <div>
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(87, 204, 153,0.7" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(56, 163, 165,0.5)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(34, 87, 122,0.3)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="#22577a" />
+        </g>
+      </svg>
+    </div>
+  </header>
+
+  <section class="experience">
+    <h2>Experience</h2>
+  </section>
+
+  <section class="company">
+    <div class="company__name">
+      Proemia
+    </div>
+    <div class="company__description">
+      <p>Working as Full-Stack developer</p>
+      <p>Task automation</p>
+    </div>
+
+    <div class="company__name">
+      Emergya
+    </div>
+    <div class="company__description">
+      <p>Working with AWS on ETL Project</p>
+      <p>Creating an application web to fix security issues<br />
+        automatically with microservices
+      </p>
+      <p>Providing solutions for new implementations on multiple projects</p>
+      <p>Fix issues on mobile project</p>
+    </div>
+
+    <div class="company__name">
+      Sngular
+    </div>
+    <div class="company__description">
+      <p>Full-stack web developer with stack JS</p>
+    </div>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="skills__logos">
+      <img src="images/react.png" alt="react logo" width="120" height="120" />
+      <img src="images/angular.png" alt="react logo" width="120" height="120" />
+      <img src="images/node.png" alt="react logo" width="120" height="120" />
+      <img src="images/nest.png" alt="react logo" width="120" height="120" />
+      <img src="images/mongo.png" alt="react logo" width="120" height="120" />
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact__form">
+      <input type="textarea" id="textarea" name="comment" size="200" placeholder="Ask me anything"
+        class="input form__textarea"><br />
+      <input type="button" value="Send Email" class="form__button" onclick="sendEmail()">
+    </div>
+  </section>
+
+  <footer>
+    <div class="rrss">
+      <a href="https://github.com/antoniojht" target="_blank" rel="noopener" aria-label="Github">
+        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          <path
+            d="M14.3333 19V17.137C14.3583 16.8275 14.3154 16.5163 14.2073 16.2242C14.0993 15.9321 13.9286 15.6657 13.7067 15.4428C15.8 15.2156 18 14.4431 18 10.8989C17.9998 9.99256 17.6418 9.12101 17 8.46461C17.3039 7.67171 17.2824 6.79528 16.94 6.01739C16.94 6.01739 16.1533 5.7902 14.3333 6.97811C12.8053 6.57488 11.1947 6.57488 9.66666 6.97811C7.84666 5.7902 7.05999 6.01739 7.05999 6.01739C6.71757 6.79528 6.69609 7.67171 6.99999 8.46461C6.35341 9.12588 5.99501 10.0053 5.99999 10.9183C5.99999 14.4366 8.19999 15.2091 10.2933 15.4622C10.074 15.6829 9.90483 15.9461 9.79686 16.2347C9.68889 16.5232 9.64453 16.8306 9.66666 17.137V19"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M9.66667 17.7018C7.66667 18.3335 6 17.7018 5 15.7544" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="https://www.linkedin.com/in/antoniojoseherreratabaco/" target="_blank" rel="noopener"
+        aria-label="linkedIn">
+        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 17V13.5V10" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17" stroke="currentColor"
+            stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M7 7.01L7.01 6.99889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+      <a href="https://twitter.com/antoniojht" target="_blank" rel="noopener" aria-label="Twitter">
+        <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23 3.01006C23 3.01006 20.9821 4.20217 19.86 4.54006C19.2577 3.84757 18.4573 3.35675 17.567 3.13398C16.6767 2.91122 15.7395 2.96725 14.8821 3.29451C14.0247 3.62177 13.2884 4.20446 12.773 4.96377C12.2575 5.72309 11.9877 6.62239 12 7.54006V8.54006C10.2426 8.58562 8.50127 8.19587 6.93101 7.4055C5.36074 6.61513 4.01032 5.44869 3 4.01006C3 4.01006 -1 13.0101 8 17.0101C5.94053 18.408 3.48716 19.109 1 19.0101C10 24.0101 21 19.0101 21 7.51006C20.9991 7.23151 20.9723 6.95365 20.92 6.68006C21.9406 5.67355 23 3.01006 23 3.01006Z"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+      </a>
+    </div>
+    <p class="footer__name"> 
+      &copy; Antonio José Herrera Tabaco - <script>document.write(new Date().getFullYear())</script>
+    </p>
+  </footer>
+</body>
+
 </html>

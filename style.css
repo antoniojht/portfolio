@@ -1,8 +1,30 @@
+/* GLOBAL */
+a {
+  text-decoration: none;
+  color: rgb(104, 104, 104);
+}
+
+img {
+  width: 350px;
+  height: auto;
+}
+
 body {
   margin: 0;
   background-color: #22577a;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 }
+
+h1 {
+  color: rgb(85, 85, 85);
+}
+
+h1 span {
+  color: black;
+  font-size: 50px
+}
+
+/* NAVBAR */
 
 .navbar {
   background-color: #ededed;
@@ -12,10 +34,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.rrss {
-  margin-right: 120px;
 }
 
 .index a {
@@ -30,21 +48,13 @@ body {
   margin-left: 100px;
 }
 
-a {
-  text-decoration: none;
-  color: rgb(104, 104, 104);
-}
-
-img {
-  width: 350px;
-  height: auto;
-}
-
 .header {
   position: relative;
   text-align: center;
   background: rgb(243, 243, 243);
 }
+
+/* HEADER */
 
 .about {
   z-index: 2;
@@ -82,15 +92,6 @@ img {
   margin-left: 5px;
 }
 
-h1 {
-  color: rgb(85, 85, 85);
-}
-
-h1 span {
-  color: black;
-  font-size: 50px
-}
-
 .about__presentation {
   display: flex;
   justify-content: center;
@@ -111,7 +112,7 @@ h1 span {
 
 
 /* Company */
-.experience h1 {
+.experience h2 {
   color: white;
   display: flex;
   justify-content: center;
@@ -125,7 +126,8 @@ h1 span {
   background-color: #57cc99;
   color: white;
   border-radius: 180px;
-  /* width: fit-content; */
+  /* Comment below property to align center */
+  width: fit-content; 
   text-align: center;
   padding: 5px 10px;
   
@@ -152,7 +154,7 @@ h1 span {
 }
 
 /* Skills */
-.skills h1 {
+.skills h2 {
   color: white;
   display: flex;
   justify-content: center;
@@ -174,14 +176,79 @@ h1 span {
 }
 
 /* Contact */
-.contact h1 {
-  color: white;
+.contact {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+
+}
+
+.contact h2 {
+  color: white;
   font-weight: lighter;
   margin-top: 100px;
   font-size: 45px;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input {
+  background-color: white;
+  border-radius: 10px;
+  border: none;
+  height: 30px;
+  margin: 10px 0px;
+  box-sizing: border-box;
+}
+
+.form__textarea {
+  height: 150px;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.form__textarea {
+  width: 80%;
+}
+
+.form__button {
+  border-radius: 100px;
+  border: none;
+  width: 100%;
+  max-width: 400px;
+  height: 30px;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #ededed;
+  margin-top: 50px;
+  width: 100%;
+  height: 100px;
+}
+
+.rrss {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.footer__name {
+  color: rgb(104, 104, 104);
+  text-align: center;
 }
 
 /* Waves */
@@ -194,7 +261,7 @@ h1 span {
   max-height: 150px;
 }
 
-/* Animation*/
+/* Animation */
 .parallax>use {
   animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
 }
