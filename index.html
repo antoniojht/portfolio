@@ -10,36 +10,15 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <link canonical="http://127.0.0.1:5500/personal/portfolio/index.html">
   <title>Portfolio Jota</title>
-  <!-- <link rel="stylesheet" href="reset.css"> -->
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script>
-    function sendEmail() {
-      const context = document.getElementById('textarea');
-      //TODO: Limit token to only my host domain
-      Email.send({
-        SecureToken: '399de012-2b2b-43b1-9c3b-e64196d55a91',
-        To: 'ajherreratabaco@gmail.com',
-        From: 'ajherreratabaco@gmail.com',
-        Subject: "Contact by portfolio",
-        Body: context
-      }).then(
-        message => alert(message)
-        //TODO: limit button after 1 email
-      );
-    }
-  </script>
-
 <body>
   <nav class="navbar">
     <div class="index">
-      <a href="#">Experience</a>
-      <a href="#">Skills</a>
-      <a href="#">Contact</a>
-
+      <a class="anchor" href="#experience">Experience</a>
+      <a class="anchor" href="#skills">Skills</a>
+      <a class="anchor" href="#contact">Contact</a>
     </div>
-    
   </nav>
 
   <header class="header">
@@ -90,41 +69,41 @@
     </div>
   </header>
 
-  <section class="experience">
-    <h2>Experience</h2>
+  <section class="experience" id="experience">
+    <h2 class="title__section">Experience</h2>
+
+    <div class="company">
+      <div class="company__name">
+        Proemia
+      </div>
+      <div class="company__description">
+        <p>Working as Full-Stack developer</p>
+        <p>Task automation</p>
+      </div>
+
+      <div class="company__name">
+        Emergya
+      </div>
+      <div class="company__description">
+        <p>Working with AWS on ETL Project</p>
+        <p>Creating an application web to fix security issues<br />
+          automatically with microservices
+        </p>
+        <p>Providing solutions for new implementations on multiple projects</p>
+        <p>Fix issues on mobile project</p>
+      </div>
+
+      <div class="company__name">
+        Sngular
+      </div>
+      <div class="company__description">
+        <p>Full-stack web developer with stack JS</p>
+      </div>
+    </div>
   </section>
 
-  <section class="company">
-    <div class="company__name">
-      Proemia
-    </div>
-    <div class="company__description">
-      <p>Working as Full-Stack developer</p>
-      <p>Task automation</p>
-    </div>
-
-    <div class="company__name">
-      Emergya
-    </div>
-    <div class="company__description">
-      <p>Working with AWS on ETL Project</p>
-      <p>Creating an application web to fix security issues<br />
-        automatically with microservices
-      </p>
-      <p>Providing solutions for new implementations on multiple projects</p>
-      <p>Fix issues on mobile project</p>
-    </div>
-
-    <div class="company__name">
-      Sngular
-    </div>
-    <div class="company__description">
-      <p>Full-stack web developer with stack JS</p>
-    </div>
-  </section>
-
-  <section class="skills">
-    <h2>Skills</h2>
+  <section class="skills" id="skills">
+    <h2 class="title__section">Skills</h2>
     <div class="skills__logos">
       <img src="images/react.png" alt="react logo" width="120" height="120" />
       <img src="images/angular.png" alt="react logo" width="120" height="120" />
@@ -134,18 +113,18 @@
     </div>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
+  <section class="contact" id="contact">
+    <h2 class="title__section">Contact</h2>
     <div class="contact__form">
-      <input type="textarea" id="textarea" name="comment" size="200" placeholder="Ask me anything"
-        class="input form__textarea"><br />
-      <input type="button" value="Send Email" class="form__button" onclick="sendEmail()">
+      <textarea id="textarea" name="comment" size="200" cols="100" autocomplete="off" placeholder="Ask me anything"
+        class="input form__textarea"></textarea>
+      <a type="button" value="Send Email" class="form__button" >Send Email</a>
     </div>
   </section>
 
   <footer>
     <div class="rrss">
-      <a href="https://github.com/antoniojht" target="_blank" rel="noopener" aria-label="Github">
+      <a class="anchor" href="https://github.com/antoniojht" target="_blank" rel="noopener" aria-label="Github">
         <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -158,7 +137,7 @@
             stroke-linejoin="round" />
         </svg>
       </a>
-      <a href="https://www.linkedin.com/in/antoniojoseherreratabaco/" target="_blank" rel="noopener"
+      <a class="anchor" href="https://www.linkedin.com/in/antoniojoseherreratabaco/" target="_blank" rel="noopener"
         aria-label="linkedIn">
         <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
@@ -171,7 +150,7 @@
           <path d="M7 7.01L7.01 6.99889" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
         </svg>
       </a>
-      <a href="https://twitter.com/antoniojht" target="_blank" rel="noopener" aria-label="Twitter">
+      <a class="anchor" href="https://twitter.com/antoniojht" target="_blank" rel="noopener" aria-label="Twitter">
         <svg width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
           xmlns="http://www.w3.org/2000/svg">
           <path
@@ -180,8 +159,9 @@
         </svg>
       </a>
     </div>
-    <p class="footer__name"> 
-      &copy; Antonio José Herrera Tabaco - <script>document.write(new Date().getFullYear())</script>
+    <p class="footer__name">
+      &copy; Antonio José Herrera Tabaco -
+      <script>document.write(new Date().getFullYear())</script>
     </p>
   </footer>
 </body>

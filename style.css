@@ -1,5 +1,11 @@
 /* GLOBAL */
-a {
+:root {
+  --green-lighter: #38a3a5;
+  --green-darker: #22577a;
+  --green-main: #57cc99;
+}
+
+.anchor {
   text-decoration: none;
   color: rgb(104, 104, 104);
 }
@@ -9,9 +15,14 @@ img {
   height: auto;
 }
 
+html {
+  scroll-behavior: smooth;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 body {
   margin: 0;
-  background-color: #22577a;
+  background-color: var(--green-darker);
   font-family: Helvetica, sans-serif;
 }
 
@@ -24,15 +35,29 @@ h1 span {
   font-size: 50px
 }
 
-/* NAVBAR */
+textarea {
+  resize: none;
+}
 
+/* SHARED */
+.title__section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  margin-top: 100px;
+  font-size: 45px;
+}
+
+/* NAVBAR */
 .navbar {
   background-color: #ededed;
   height: 65px;
-  width: 100%;  
+  width: 100%;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -48,13 +73,13 @@ h1 span {
   margin-left: 100px;
 }
 
+
+/* HEADER */
 .header {
   position: relative;
   text-align: center;
   background: rgb(243, 243, 243);
 }
-
-/* HEADER */
 
 .about {
   z-index: 2;
@@ -68,13 +93,14 @@ h1 span {
   flex-direction: column;
 }
 
-.soft-skill__first, .soft-skill__second {
+.soft-skill__first,
+.soft-skill__second {
   display: flex;
   justify-content: center;
 }
 
 .pills {
-  background-color: #38a3a5;
+  background-color: var(--green-lighter);
   border-radius: 20px;
   margin: 6px 5px;
   padding: 4px 10px;
@@ -83,7 +109,7 @@ h1 span {
 }
 
 .rol-pill {
-  background-color: #57cc99;
+  background-color: var(--green-main);
   color: white;
   border-radius: 20px;
   width: fit-content;
@@ -96,13 +122,12 @@ h1 span {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;  
+  margin-top: 20px;
 }
 
 .about__description {
   margin-bottom: 0px;
 }
-
 
 .content {
   position: relative;
@@ -110,42 +135,7 @@ h1 span {
   text-align: center;
 }
 
-
-/* Company */
-.experience h2 {
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: lighter;
-  margin-top: 100px;
-  font-size: 45px;
-}
-
-.company__description p{
-  background-color: #57cc99;
-  color: white;
-  border-radius: 180px;
-  /* Comment below property to align center */
-  width: fit-content; 
-  text-align: center;
-  padding: 5px 10px;
-  
-  font-size: 20px;
-  
-  margin-left: 5px;
-  margin-top: 5px;
-}
-
-.company__description p:nth-child(2n+1) {
-  background-color: #38a3a5;
-}
-
-.company__name {
-  color: #c7f9cc;
-  font-size: 30px;
-}
-
+/* COMPANY */
 .company {
   display: flex;
   flex-direction: column;
@@ -153,18 +143,40 @@ h1 span {
   align-items: center;
 }
 
-/* Skills */
-.skills h2 {
-  color: white;
+.company__description {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-weight: lighter;
-  margin-top: 120px;
-  font-size: 45px;
 }
 
-.skills__logos img{
+.company__description p {
+  background-color: var(--green-main);
+  color: white;
+  border-radius: 180px;
+
+  width: fit-content;
+  text-align: center;
+  padding: 5px 10px;
+
+  font-size: 20px;
+
+  margin-left: 5px;
+  margin-top: 20px;
+}
+
+.company__description p:nth-child(2n+1) {
+  background-color: var(--green-lighter);
+}
+
+.company__name {
+  color: #c7f9cc;
+  font-size: 30px;
+  margin-top: 5px;
+  padding: 0.5rem 4rem;
+}
+
+/* SKILLS */
+.skills__logos img {
   max-width: 120px;
   margin: 0px 5px;
 }
@@ -175,20 +187,13 @@ h1 span {
   justify-content: center;
 }
 
-/* Contact */
+/* CONTACT */
 .contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-}
-
-.contact h2 {
-  color: white;
-  font-weight: lighter;
-  margin-top: 100px;
-  font-size: 45px;
 }
 
 .contact__form {
@@ -211,22 +216,29 @@ h1 span {
   height: 150px;
   max-width: 500px;
   border-radius: 10px;
+  width: 80%;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .input:focus {
   outline: none;
 }
 
-.form__textarea {
-  width: 80%;
+.form__textarea::placeholder {
+  padding-left: 10px;
 }
 
 .form__button {
   border-radius: 100px;
   border: none;
-  width: 100%;
-  max-width: 400px;
+  width: auto;
+  padding: 5px 25px;
   height: 30px;
+  color: white;
+  font-weight: 700;
+  background-color: var(--green-main);
+  cursor: pointer;
 }
 
 /* FOOTER */
@@ -296,7 +308,6 @@ footer {
   }
 }
 
-/*Shrinking for mobile*/
 @media (max-width: 768px) {
   .waves {
     height: 40px;
