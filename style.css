@@ -3,6 +3,7 @@
   --green-lighter: #38a3a5;
   --green-darker: #22577a;
   --green-main: #57cc99;
+  --black: color: rgb(85, 85, 85);
 }
 
 .anchor {
@@ -27,10 +28,10 @@ body {
 }
 
 h1 {
-  color: rgb(85, 85, 85);
+  color: var(--black);
 }
 
-h1 span {
+.about__title span {
   color: black;
   font-size: 50px
 }
